@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*  You can still write your normal CSS here and reference the class in your app. For example:   */
+body {
+    overflow-x: hidden;
+}
