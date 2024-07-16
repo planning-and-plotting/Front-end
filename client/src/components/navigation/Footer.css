@@ -1,0 +1,26 @@
+.App-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+  
+  .footer-section {
+    width: 30%;
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 100px;
+  }
+
+  .f-head{
+    font-weight: 500;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+  }
+  

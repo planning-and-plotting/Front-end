@@ -1,37 +1,75 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../../assets/richco.png"; // Corrected relative path
+import "./Navbar.css"; // Import the CSS file
 
 const navLinks = [
-	{ name: "Home", path: "/" },
-	{ name: "Products and Services", path: "/products" },
-	{ name: "About", path: "/about" },
-	{ name: "Contact Us", path: "/contact" },
+	{ name: "HOME", path: "/" },
+	{ name: "PRODUCTS AND SERVICES", path: "/products" },
 ];
 
-// TODO: Work on the navbar as shown in the figma design
-
 const Navbar = () => {
+	const [dropdownVisible, setDropdownVisible] = useState(false);
+
+	const handleMouseEnter = () => {
+		setDropdownVisible(true);
+	};
+
+	const handleMouseLeave = () => {
+		setDropdownVisible(false);
+	};
+
 	return (
-		// <nav className="w-screen h-[7vh]">
-		// 	<div className="max-w-screen-xl mx-auto h-full p-5 flex justify-between items-center">
-		// 		<div className="gap-6 hidden lg:flex">
-		// 			{navLinks.map((item, index) => (
-		// 				<div key={index}>
-		// 					<NavLink
-		// 						to={item.path}
-		// 						className={({ isActive }) =>
-		// 							isActive ? "underline underline-offset-2" : ""
-		// 						}
-		// 					>
-		// 						{item.name}
-		// 					</NavLink>
-		// 				</div>
-		// 			))}
-		// 		</div>
-		// 	</div>
-		// </nav>
-		<nav>
-			<h1>Navbar</h1>
+		<nav className="navbar">
+			<div className="container">
+				<div className="logo-container">
+					<img src={logo} alt="Richco Trust Ghana Ltd. Logo" className="logo" />
+				</div>
+				<div className="nav-links">
+					{navLinks.map((item, index) => (
+						<NavLink
+							key={index}
+							to={item.path}
+							className="nav-link"
+							activeClassName="active"
+						>
+							{item.name}
+						</NavLink>
+					))}
+					<div
+						className="nav-link about-link"
+						onMouseEnter={handleMouseEnter}
+						onMouseLeave={handleMouseLeave}
+					>
+						ABOUT US
+						{dropdownVisible && (
+							<div className="dropdown-menu">
+								<NavLink
+									to="/about"
+									className="dropdown-link"
+									activeClassName="active"
+								>
+									About Us
+								</NavLink>
+								<NavLink
+									to="/policies"
+									className="dropdown-link"
+									activeClassName="active"
+								>
+									Policies
+								</NavLink>
+							</div>
+						)}
+					</div>
+					<NavLink
+						to="/contact"
+						className="nav-link"
+						activeClassName="active"
+					>
+						CONTACT US
+					</NavLink>
+				</div>
+			</div>
 		</nav>
 	);
 };
