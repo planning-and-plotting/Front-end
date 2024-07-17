@@ -1,13 +1,10 @@
-/* Navbar.css */
-
 .navbar {
   max-width: 12000px;
-  height: 200;
+  height: 200px; /* Added 'px' unit */
   background-color: black;
   color: white;
   display: flex;
   align-items: center;
-
 }
 
 .container {
@@ -23,15 +20,13 @@
   display: flex;
   height: 150px;
   align-items: center;
-
 }
 
 .logo {
   height: 190px; /* Adjust as needed */
-    margin-right: 40px; /* Adjust as needed */
-    padding-left: 40px;
-    width: 100%;
-
+  margin-right: 40px; /* Adjust as needed */
+  padding-left: 40px;
+  width: 100%;
 }
 
 .nav-links {
@@ -49,7 +44,6 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 300;
   font-size: 13px;
-
 }
 
 .nav-link:hover {
@@ -68,6 +62,7 @@
 .about-link.active {
   color: red;
 }
+
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -84,17 +79,87 @@
   color: white;
   text-decoration: none;
   padding: 10px 25px;
-  background-color:#6D6C6C;
+  background-color: #6D6C6C;
   width: 80px;
   height: 80px;
   font-size: 12px;
   font-weight: 500;
-  
+}
 
+.dropdown-link.active {
+  background-color: #383838;
+}
 
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 20;
+  padding-right: 25px;
+}
+
+.burger div {
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  margin: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Drawer styles */
+.drawer {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px; /* Increased width for drawer */
+  height: 100vh;
+  background-color: black;
+  padding: 60px 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
 }
 
 
-.dropdown-link.active {
-  background-color:#383838;
+.drawer a:hover {
+  font-weight: 400;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    margin-left: 270px;
+  }
+
+  .burger {
+    display: flex;
+    align-items: center; /* Added alignment */
+  }
+
+  .burger.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .burger.toggle .line2 {
+    opacity: 0;
+  }
+
+  .burger.toggle .line3 {
+    transform: rotate(45deg) translate(-4px, -5px);
+  }
+
+  .nav-links.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%; /* Adjusted width for drawer */
+    height: 80vh;
+    background-color: black;
+    padding-top: 60px;
+    align-items: center;    
+    
+  }
 }

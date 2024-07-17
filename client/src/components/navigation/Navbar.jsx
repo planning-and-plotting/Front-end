@@ -10,6 +10,7 @@ const navLinks = [
 
 const Navbar = () => {
 	const [dropdownVisible, setDropdownVisible] = useState(false);
+	const [drawerVisible, setDrawerVisible] = useState(false);
 
 	const handleMouseEnter = () => {
 		setDropdownVisible(true);
@@ -19,13 +20,17 @@ const Navbar = () => {
 		setDropdownVisible(false);
 	};
 
+	const toggleDrawer = () => {
+		setDrawerVisible(!drawerVisible);
+	};
+
 	return (
 		<nav className="navbar">
 			<div className="container">
 				<div className="logo-container">
 					<img src={logo} alt="Richco Trust Ghana Ltd. Logo" className="logo" />
 				</div>
-				<div className="nav-links">
+				<div className={`nav-links ${drawerVisible ? "show" : ""}`}>
 					{navLinks.map((item, index) => (
 						<NavLink
 							key={index}
@@ -61,13 +66,18 @@ const Navbar = () => {
 							</div>
 						)}
 					</div>
-					<NavLink
-						to="/contact"
-						className="nav-link"
-						activeClassName="active"
-					>
+					<NavLink to="/contact" className="nav-link" activeClassName="active">
 						CONTACT US
 					</NavLink>
+				</div>
+
+				<div
+					className={`burger ${drawerVisible ? "toggle" : ""}`}
+					onClick={toggleDrawer}
+				>
+					<div className="line1"></div>
+					<div className="line2"></div>
+					<div className="line3"></div>
 				</div>
 			</div>
 		</nav>
