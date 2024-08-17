@@ -1,2 +1,3 @@
 # Front-end
-Front-end 208 project
+
+<p>This contains the frontend of the application</p>
