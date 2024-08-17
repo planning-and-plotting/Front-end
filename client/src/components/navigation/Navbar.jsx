@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/richco.png"; // Corrected relative path
-import "./Navbar.css"; // Import the CSS file
+import logo from "../../assets/richco.png"; 
+import "./Navbar.css";
 
 const navLinks = [
 	{ name: "HOME", path: "/" },

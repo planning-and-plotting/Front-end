@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*  You can still write your normal CSS here and reference the class in your app. For example:   */
+body {
+  overflow-x: hidden;
+}
+
+.contact-container {
+  background-color: white;
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  position: relative; /* Position relative for internal positioning */
+}
+
+.contact-form-container,
+.contact-info-container {
+  width: 50%;
+  position: relative;
+  padding: 20px;
+  border-radius: 0px;
+  box-sizing: border-box; /* Ensure padding does not affect width */
+}
+
+.contact-form-container {
+  background-image: url("C:\Users\USER\Desktop\contact.jsx\Front-end\client\for code.jpg");
+  background-size: cover;
+  background-position: center;
+  color: black;
+  display: flex;
+  border-radius: 0; /* Ensure no border-radius */
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+}
+
+.contact-info-container {
+  background-color: burlywood;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info-container h2,
+.contact-form-container h2 {
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  height: 60px; /* Adjusted height */
+}
+
+.contact-form button {
+  width: 100%; /* Ensure the button spans the full width of the form */
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+.contact-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: black;
+}
+
+.overlay-text {
+  position: fixed; /* Fixed position to ensure it stays in view */
+  top: 40px; /* Adjust the distance from the top */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* Span the full width of the viewport */
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0; /* No border-radius */
+  z-index: 3; /* Ensure it's above other content */
+}
+
+/* src/styles/admin.css */
+.admin-page {
+  background-image: url("C:\Users\USER\Desktop\contact.jsx\Front-end\client\src\assets\for code.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}

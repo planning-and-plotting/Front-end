@@ -1,0 +1,8 @@
+/* src/styles/admin.css */
+.admin-page {
+    background-image: url('/src/assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  

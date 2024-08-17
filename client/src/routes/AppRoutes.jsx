@@ -1,4 +1,3 @@
-import React from "react";
 import { Route, Routes } from "react-router-dom";
 import About from "../components/pages/About.jsx";
 import Background from "../components/pages/Background.jsx";
@@ -10,8 +9,9 @@ import Policies from "../components/pages/Policies.jsx";
 import Products from "../components/pages/Products.jsx";
 import Gallery from "../components/pages/gallery.jsx";
 import Layout from "../layouts/Layout.jsx";
+import AdminLogin from "../components/pages/AdminLogin.jsx";
+import AdminDashboard from "../components/pages/AdminDashboard.jsx";
 
-// TODO: Share the pages amongst you and start working
 const AppRoutes = () => {
 	return (
 		<Routes>
@@ -25,6 +25,9 @@ const AppRoutes = () => {
 				<Route path="mission" element={<Mission />} />
 				<Route path="policies" element={<Policies />} />
 				<Route path="director" element={<Contact />} />
+				<Route path="/" element={<Contact />} />
+      <Route path="/admin/login" element={<AdminLogin />} />
+      <Route path="/admin/dashboard" element={<AdminDashboard />} />
 				<Route path="*" element={<NotFound />} />
 			</Route>
 		</Routes>
