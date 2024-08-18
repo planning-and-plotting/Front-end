@@ -6,9 +6,14 @@ import Footer from "../components/navigation/Footer.jsx";
 const Layout = () => {
 	return (
 		<>
-			<Navbar />
-			<Outlet />
-			<Footer />
+			<div className="flex flex-col min-h-screen">
+				<Navbar />
+				<div className="flex flex-grow">
+					<Outlet />
+				</div>
+
+				<Footer />
+			</div>
 		</>
 	);
 };

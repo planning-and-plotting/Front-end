@@ -1,6 +1,6 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/richco.png"; 
+import logo from "../../assets/richco.png";
 import "./Navbar.css";
 
 const navLinks = [

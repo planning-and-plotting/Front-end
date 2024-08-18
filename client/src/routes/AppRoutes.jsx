@@ -26,8 +26,8 @@ const AppRoutes = () => {
 				<Route path="policies" element={<Policies />} />
 				<Route path="director" element={<Contact />} />
 				<Route path="/" element={<Contact />} />
-      <Route path="/admin/login" element={<AdminLogin />} />
-      <Route path="/admin/dashboard" element={<AdminDashboard />} />
+				<Route path="/admin/login" element={<AdminLogin />} />
+				<Route path="/admin/dashboard" element={<AdminDashboard />} />
 				<Route path="*" element={<NotFound />} />
 			</Route>
 		</Routes>
