@@ -51,7 +51,7 @@ const Contact = () => {
 				justifyContent: "center",
 			}}
 		>
-			<div className="overlay-text">Contact Us</div>
+			
 			<div className="contact-container">
 				<div className="contact-form-container">
 					<h2>Message Us</h2>

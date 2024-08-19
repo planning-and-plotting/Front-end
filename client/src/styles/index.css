@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 /*  You can still write your normal CSS here and reference the class in your app. For example:   */
 body {
@@ -25,7 +23,7 @@ body {
   border-radius: 0px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 600px;
-  height: 400px;
+  height: 520px;
   display: flex;
   justify-content: space-between;
   position: relative; /* Position relative for internal positioning */
@@ -41,7 +39,7 @@ body {
 }
 
 .contact-form-container {
-  background-image: url("C:\Users\USER\Desktop\contact.jsx\Front-end\client\for code.jpg");
+  background-image: url("../assets/forcode.jpg");
   background-size: cover;
   background-position: center;
   color: black;
@@ -131,7 +129,7 @@ body {
 
 /* src/styles/admin.css */
 .admin-page {
-  background-image: url("C:\Users\USER\Desktop\contact.jsx\Front-end\client\src\assets\for code.jpg");
+  background-image: url("../assets/forcode.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100vh;

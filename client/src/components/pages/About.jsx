@@ -57,15 +57,9 @@ const AboutUs = () => {
 						<h3>Richard Kabutey</h3>
 						<h4>CEO of Richco</h4>
 						<hr className="hr3" />
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in
-						reprehenderit <br /> in voluptate velit esse cillum dolore eu fugiat
-						nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-						in culpa qui officia deserunt mollit anim id est laborum. Lorem
-						ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua.
+						The CEO of Richco Trust Company Limited is a dynamic leader with a remarkable track record in the oil transportation industry. Under their stewardship, the company has achieved significant growth and operational excellence. With a keen strategic vision, the CEO has steered Richco Trust through evolving market conditions, emphasizing sustainability, innovation, and safety.
+
+They possess a deep understanding of logistics and supply chain management, combined with a passion for advancing industry standards. Their leadership style is characterized by a commitment to fostering a collaborative and forward-thinking corporate culture. By championing cutting-edge technologies and sustainable practices, the CEO has positioned Richco Trust as a leader in the oil transport sector, dedicated to delivering exceptional service and creating value for clients and stakeholders alike.
 					</p>
 					<img className="director-img" src={Richard} alt="Richard Kabutey" />
 				</div>
@@ -80,16 +74,7 @@ const AboutUs = () => {
 						<h4>Co-Director of Richco</h4>
 						<hr className="hr3-2" />
 						<p className="p2">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-							enim ad minim veniam, quis nostrud exercitation ullamco laboris
-							nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-							reprehenderit <br />
-							in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-							officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-							amet, consectetur adipiscing elit. Sed do eiusmod tempor
-							incididunt ut labore et dolore magna aliqua.
+							The Co-Director of Richco Trust Company Limited is a pivotal force in steering the company’s strategic direction and operational efficiency. With a strong background in management and logistics, they play a crucial role in optimizing processes and driving growth. Their expertise in strategic planning and commitment to excellence supports the company's mission to lead in oil transportation while fostering a culture of innovation and sustainability.
 						</p>
 					</p>
 				</div>
